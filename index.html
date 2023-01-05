@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>AbodeDesk Mobile App Category Bootstrap Responsive Website Template | Main :: W3layouts
+	</title>
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<!-- Template CSS -->
+
+	<link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+
+	<!-- Template CSS -->
+</head>
+
+<body>
+	<div class="main-row">
+		<div class="container">
+			
+			<div class="d-grid frame-alignment-three">
+				
+				<div class="main_frame position-relative text-center">
+					<iframe class="frame-border" src="main-inner.html" frameborder="0"></iframe>
+
+				</div>
+				
+
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!--/MENU-JS-->
+<script>
+	$(window).on("scroll", function () {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 80) {
+			$("#site-header").addClass("nav-fixed");
+		} else {
+			$("#site-header").removeClass("nav-fixed");
+		}
+	});
+	//Main navigation Active Class Add Remove
+	$(".navbar-toggler").on("click", function () {
+		$("header").toggleClass("active");
+	});
+	$(document).on("ready", function () {
+		if ($(window).width() > 991) {
+			$("header").removeClass("active");
+		}
+		$(window).on("resize", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+		});
+	});
+</script>
+<!--//MENU-JS-->
+<script src="assets/js/bootstrap.min.js"></script>
